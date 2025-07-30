@@ -1,0 +1,162 @@
+
+        :root {
+            --primary-bg: #1a1b26;
+            --text-color: #c0caf5;
+            --highlight-color: #7aa2f7;
+            --accent-color: #bb9af7;
+            --font-main: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 40px 20px;
+            min-height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        h1, h2 {
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2.3em;
+        }
+
+        .content-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1000px;
+            width: 100%;
+            justify-content: center;
+        }
+        .content-images {
+            display: grid;
+            grid-template-columns: max-content max-content;
+            gap: 30px;
+            max-width: 1000px;
+            width: 100%;
+            justify-content: center;
+            border: 0px;
+        }
+        .tamanho1{
+            width: 462px;
+            height: 626px;
+        }
+        .tamanho2{
+            width: 533px;
+            height: 455px;
+        }
+
+        .text-content, .media-content {
+            flex: 1 1 400px;
+            margin-bottom: 0px;
+        }
+        .promocionais{
+            text-align: center;
+        }
+        .media-content img, video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            font-size: 1.1rem;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 26px;
+        }
+
+        .map-link, .contact-links a {
+            color: var(--highlight-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .map-link:hover, .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .contact-links a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-links img {
+            width: 24px;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            background-color: #16161e;
+            color: #737aa2;
+        }
+        /*tamanho de celular*/
+        @media (max-width: 768px) {
+            .content-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .content-images{
+                display: block;
+                font-size: 10px;
+            }
+            li{
+                font-size: 18px;
+            }
+            .tamanho2{
+                width: 100%;
+                height: 1000%;
+            }
+            .media-content{
+                border-bottom: 0px;
+                margin-bottom: 0px;
+            }
+            #map{
+                border-top: none;
+                margin-top: none;
+
+            }  
+            .map-link{
+                border-bottom: 0px;
+                margin-bottom: 0px;
+            }
+        }   
