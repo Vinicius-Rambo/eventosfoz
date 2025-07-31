@@ -129,6 +129,10 @@
             background-color: #16161e;
             color: #737aa2;
         }
+
+        .zoom{
+            zoom: 1.5;
+        }
         /*tamanho de celular*/
         @media (max-width: 768px) {
             .content-container {
@@ -158,5 +162,8 @@
             .map-link{
                 border-bottom: 0px;
                 margin-bottom: 0px;
+            }
+            .zoom{
+                zoom: 1;
             }
         }   
